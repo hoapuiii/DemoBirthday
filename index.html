@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Riimi!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script&family=Pacifico&family=Emily's+Candy&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-image: url('https://i.postimg.cc/CLrBxPhs/image.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #333;
+      padding: 40px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Emily\'s Candy', cursive;
+      color: #8B4513;
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .message-container {
+      display: none;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: fade-in-up 1s ease-out forwards;
+      max-width: 600px;
+      width: 100%;
+      text-align: left;
+    }
+
+    .message {
+      font-family: 'Pacifico', cursive;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .message p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .signature {
+      font-family: 'Dancing Script', cursive;
+      text-align: right;
+      font-style: italic;
+      font-size: 16px;
+    }
+
+    .next-btn {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 22px;
+      background-color: #ff88cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: 'Pacifico', cursive;
+      transition: background-color 0.3s ease;
+    }
+
+    .next-btn:hover {
+      background-color: #ff66b2;
+    }
+
+    .icon-container {
+      text-align: center;
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .icon {
+      width: 80px;
+      height: 80px;
+      margin: 10px;
+      display: inline-block;
+      animation: icon-float 2s ease-in-out infinite;
+    }
+
+    .icon:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes fade-in-up {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes icon-float {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+<!-- Thêm nhạc nền -->
+<audio autoplay loop>
+  <source src="https://drive.google.com/uc?export=download&id=1Lono5Bm_s1sni8pRnAyKNlSIleMexri_" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
+<h1 id="title">Happy Birthday, Riimi!</h1>
+
+<button class="next-btn" id="nextBtn">Next</button>
+
+<div class="message-container" id="messageContainer">
+  <div class="message">
+    <p>Dear Riimi,</p>
+    <p>On this special day, I want to celebrate with you. I just want to say that you're always beautiful so you need to be more confident about yourself. You should smile a lot and don't be so depressed because you're pretty with smile on your face. In the future, maybe I can't be beside you but I pray that your day is filled with all the things that make you happy - good food, cherished memories, and the embrace of those who love you most. May this birthday be a true reflection of the wonderful person you are, and may the year ahead bring you everything your heart desires.</p>
+    <div class="signature">Yours always,<br>puipui</div>
+  </div>
+</div>
+
+<div class="icon-container">
+  <img src="https://img.icons8.com/?size=100&id=nT8MbKCHd41C&format=png&color=000000" class="icon" alt="Cinnamoroll Icon 1">
+  <img src="https://img.icons8.com/?size=100&id=XyXZ0ym1tSKu&format=png&color=000000" class="icon" alt="Cinnamoroll Icon 2">
+  <img src="https://img.icons8.com/?size=100&id=Y4n6c4tWCQOn&format=png&color=000000" class="icon" alt="Cinnamoroll Icon 3">
+  <img src="https://img.icons8.com/?size=100&id=Xx9XTaUJXsPz&format=png&color=000000" class="icon" alt="Cinnamoroll Icon 4">
+</div>
+
+<script>
+  document.getElementById('nextBtn').addEventListener('click', function() {
+    document.getElementById('title').style.display = 'none';
+    document.querySelector('.message-container').style.display = 'block';
+    document.getElementById('nextBtn').style.display = 'none';
+  });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
